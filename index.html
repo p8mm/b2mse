@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P8ML's Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Website Content (Hidden by Default) -->
+    <div id="content-section" style="display: none;">
+      <h1 id="website-name">B2mse's Hub</h1>
+      <img id="logo" src="logo.png" alt="Logo" width="100">
+      <p id="quote">"Your custom quote here."</p>
+      <div id="social-media-links"></div>
+
+      <!-- Customization Form -->
+      <div id="customization-section">
+        <h2>Customize Your Website</h2>
+        <input type="text" id="new-name" placeholder="New Website Name">
+        <input type="text" id="new-logo-url" placeholder="New Logo URL">
+        <input type="text" id="new-quote" placeholder="New Quote">
+        <input type="text" id="new-discord-id" placeholder="Discord ID">
+        <input type="text" id="new-social-url" placeholder="Social Media URL">
+        <button onclick="updateWebsite()">Update Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
